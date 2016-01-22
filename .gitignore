@@ -19,3 +19,5 @@
 
 #ignore the keys
 keys.rb
+
+.env
