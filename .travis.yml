@@ -3,7 +3,7 @@ branches:
   only: master
 rvm:
   - 2.2.2
-script: middleman build
+script: bundle exec middleman build
 cache: bundler
 addons:
   artifacts:
