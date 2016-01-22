@@ -22,3 +22,4 @@ gem "redcarpet"
 gem "turbolinks", require: false
 
 gem "nokogiri"
+gem 'dotenv-rails', :groups => [:development, :test]

@@ -2,6 +2,9 @@ require 'json'
 require 'net/http'
 require 'nokogiri'
 require 'keys'
+require 'dotenv'
+Dotenv.load
+
 ###
 # Compass
 ###
