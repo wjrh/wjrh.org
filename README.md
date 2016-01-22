@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/wjrh/wjrh.org.svg?branch=master)](https://travis-ci.org/wjrh/wjrh.org)
 # wjrh.org
 WJRH's static public website
 
