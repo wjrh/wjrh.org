@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.org/wjrh/wjrh.org.svg?branch=master)](https://travis-ci.org/wjrh/wjrh.org)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-crayons.svg)](http://forthebadge.com)
+[![Build Status](https://travis-ci.org/wjrh/wjrh.org.svg?branch=master)](https://travis-ci.org/wjrh/wjrh.org)
+
 # wjrh.org
 WJRH's static public website
-
-
 ###Installation
 Middleman is distributed using the RubyGems package manager. This means you will need both the Ruby language runtime installed and RubyGems to begin using Middleman.
 
