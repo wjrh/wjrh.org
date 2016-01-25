@@ -1,4 +1,3 @@
-[![forthebadge](http://forthebadge.com/images/badges/made-with-crayons.svg)](http://forthebadge.com)
 [![Build Status](https://travis-ci.org/wjrh/wjrh.org.svg?branch=master)](https://travis-ci.org/wjrh/wjrh.org)
 
 # wjrh.org
@@ -23,3 +22,5 @@ $ middleman init
 $ middleman server
 $ middleman build
 ```
+
+[![forthebadge](http://forthebadge.com/images/badges/made-with-crayons.svg)](http://forthebadge.com)
