@@ -42,3 +42,7 @@ We're always open to meeting our listeners in person however, we're a 100% stude
 <iframe width="640" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.21892547607422%2C40.69365477446245%2C-75.19489288330078%2C40.70510741061974&amp;layer=mapnik&amp;marker=40.69938133866613%2C-75.20690917968749"></iframe><br/>
 
 Input 730 High Street, Easton, PA, into your GPS device to navigate to Lafayette College. Follow admissions/visitor parking signs on High Street and park on Markle Parking Deck. Walk south towards the college quad (large green). WJRH is located in Hogg Hall, the only gothic building on the quad. There is a maroon WJRH sign in front of Hogg Hall.
+
+#### Board Meetings
+
+You can attend our open Board Meetings, held every week on Thursdays at 8PM in our Hogg Hall Studio. These meetings are held only on weeks when the college is in session. Email us with any questions regarding meeting dates/times.
