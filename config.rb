@@ -12,7 +12,7 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :directory_indexes
 
-TEAL_URL = "localhost:9000"
+TEAL_URL = "api.teal.cool"
 
 # retrieve program information
 programs_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs")
@@ -84,58 +84,9 @@ activate :automatic_image_sizes
 
 
    def generatefeed(program)
-     feed = Nokogiri::XML::Builder.new do |xml|
-       xml.rss('xmlns:itunes' => "http://www.itunes.com/dtds/podcast-1.0.dtd", 'version' => '2.0') do
-
-         #insert program information
-         xml.channel do
-           xml.title program["name"]
-           xml.link "http://wjrh.org/#{program["shortname"]}"
-           xml['itunes'].image('href' => "http://wjrh.org/vbb/logo2.jpg")
-           
-           xml.copyright program["copyright"] if program ["copyright"]
-           xml['itunes'].subtitle program["subtitle"] if program["subtitle"]
-           xml['itunes'].author program["creators"].join(", ") if program["creators"]
-           xml['itunes'].category("text" => program["itunescategory"]) if program["itunescategory"]
-
-           if program['description']
-             xml['itunes'].summary {
-               xml.cdata Tilt['markdown'].new { program['description'] }.render
-             }
-             xml.description {
-               xml.cdata Tilt['markdown'].new { program['description'] }.render
-             }
-           end
-
-           #insert each episode in this episode
-           program['episodes'].each do |episode|
-             xml.item do
-               xml.title episode['name']
-               xml['itunes'].author program['creators'].join(", ")
-               xml.guid episode["guid"] ||= episode["id"]
-               xml['itunes'].image("href" => episode['image'])
-               xml.pubDate Time.parse(episode["pubdate"]).rfc2822
-               xml['itunes'].duration episode['medias'][0]['length']
-               
-               if episode['description']
-                 xml['itunes'].subtitle {
-                  xml.cdata Tilt['markdown'].new { episode['description'] }.render
-                 }
-                 xml['itunes'].summary {
-                  xml.cdata Tilt['markdown'].new { episode['description'] }.render
-                 }
-               end
-
-               episode["medias"].each do |media|
-                 xml.enclosure("url" => media["url"], "length" => media["length"], "type" => media["type"])
-               end
-               
-             end
-           end 
-         end
-       end
-     end
-     return feed.to_xml
+    programs_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{program['shortname']}/feed.xml")
+    programs_req = Net::HTTP.get_response(programs_req_url)
+    return programs_req.body
    end
  end
 

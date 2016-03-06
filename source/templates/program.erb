@@ -21,21 +21,18 @@
 				<br>
 				<br>
 				<p>
-					<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode['medias'].first["length"] %><br>
+					<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode["length"] %><br>
 					<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse(episode['pubdate']).strftime("%b %-d, %Y") %><br>
-					<i class="fa fa-download"></i> <a href="<%= episode["medias"][0]["url"] %>">Download episode</a>
+					<i class="fa fa-download"></i> <a href="<%= episode["audio_url"] %>">Download episode</a>
 					</p>
 			</div>
 			<div class="seven columns">
 					<h3><%= episode['name'] %></h3>
 
 					<p><% if not episode['description'].nil?%> <%= Tilt['markdown'].new { episode['description'] }.render  %> <% end %></p>
-					<% episode['medias'].each do |media| %>
-						<audio class="episode-audio" controls preload="none">
-						  <source src="<%= media["url"] %>" type="<%= media["type"] %>">
-						</audio>
-
-					<% end %>
+					<audio class="episode-audio" controls preload="none">
+					  <source src="<%= episode["audio_url"] %>" type="<%= episode["type"] %>">
+					</audio>
 			</div>
 		</div>
 		<div class="line ten columns offset-by-one"></div>
