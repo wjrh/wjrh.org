@@ -16,9 +16,13 @@ TEAL_URL = "api.teal.cool"
 
 # retrieve program information
 programs_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs")
-programs_req = Net::HTTP.get_response(programs_req_url)
-@programs = JSON.parse(programs_req.body)
+req = Net::HTTP::Get.new(programs_req_url.path)
+req.body = @show.to_json
+req.add_field("teal-api-key", ENV["TEAL_KEY"])
+response = Net::HTTP.new(programs_req_url.host, programs_req_url.port).start {|http| http.request(req) }
+@programs = JSON.parse(response.body)
 @programs.each do |programPreview|
+	p programPreview['shortname']
   program_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{programPreview['shortname']}")
   program_req = Net::HTTP.get_response(program_req_url)
   program = JSON.parse(program_req.body)
