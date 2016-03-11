@@ -14,7 +14,7 @@
 </div>
 
 <div class="events">
-
+	<% if data.events.select{|k| Time.parse(k['when'], Time.now) > Time.now}.length > 0 %>
   <div class="row">
     <div class="ten columns offset-by-one">
       <h3>Upcoming Events</h3>
@@ -26,7 +26,7 @@
             <th>Where</th>
           </tr>
         </thead>
-        <% data.events.select { |k| Time.parse(k['when'], Time.now) > Time.now }.sort_by { |k| Time.parse(k['when'], Time.now)}.each do |event| %>
+				<% data.events.select { |k| Time.parse(k['when'], Time.now) > Time.now }.sort_by { |k| Time.parse(k['when'], Time.now)}.each do |event| %>
         <tbody>
           <tr>
             <td><%= event['what'] %></td>
@@ -37,7 +37,8 @@
         <% end %>
       </table>
     </div>
-  </div>
+	</div>
+<%end%>
 
     <div class="row">
     <div class="ten columns offset-by-one">
