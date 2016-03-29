@@ -1,0 +1,50 @@
+<br>
+<div class="row">
+	<div class="three columns offset-by-one">
+		<a href="/<%=program['shortname']%>/">
+		<%= tag :img, :src => ep['image'], :style => "width: 100%" %>
+		</a>
+		<br>
+		<br>
+		<p>
+			<a href="/<%=program['shortname']%>/"><%= program['name'] %></a><br>
+			<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= ep["length"] %><br>
+			<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse( ep['pubdate'] ).strftime("%b %-d, %Y") if not ep['pubdate'].nil? %><br>
+			<i class="fa fa-download"></i> <a href="<%= ep["audio_url"] %>">Download episode</a>
+		</p>
+	</div>
+	<div class="seven columns">
+		<h3><%= ep['name'] %></h3>
+		<p><% if not ep['description'].nil?%> <%= Tilt['markdown'].new { ep['description'] }.render  %> <% end %></p>
+		<audio class="episode-audio" controls preload="none">
+			<source src="<%= ep["audio_url"] %>" type="<%= ep["type"] %>"></source>
+		</audio>
+	</div>
+</div>
+
+<% if ep['tracks']%>
+<div class="row">
+	<div class="eight columns offset-by-four">
+		<h4>Track list</h4>
+		<table class="table table-condensed" style="width: 100%" >
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Title</th>
+					<th>Artist</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% ep['tracks'].each_with_index do |track, index|%>
+				<tr>
+					<td><%= index + 1 %></td>
+					<td><%= track['title'] %></td>
+					<td><%= track['artist'] %></td>
+				</tr>
+				<% end %>
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+<% end %>

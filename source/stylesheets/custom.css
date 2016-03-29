@@ -74,10 +74,6 @@ h1{
   border-color: #B22400;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .featured h6{
     margin-bottom: 0px;
 }
@@ -92,6 +88,11 @@ a {
 }
 a:hover {
   color: #0FA0CE;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 

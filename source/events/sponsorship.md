@@ -30,7 +30,7 @@ We're always happy to sponsor/co-sponsor events held at Lafayette College, hoste
 #### Contacting us regarding events
 
 Contact us as soon as possible but no later than 2 weeks before the planned event. We can help you think about and plan the event if you are not set on a date.
-Please contact the [Events Director](/people) using your Lafayette email account with the following information.
+Please contact the [Events Director](/team) using your Lafayette email account with the following information.
 
 - Person in Charge
 - Datetime
@@ -41,7 +41,7 @@ Please contact the [Events Director](/people) using your Lafayette email account
 
 We will get back to you with additional questions. We meet on every Wednesday the school is in session. Expect a definite answer the following Wednesday.
 
-If this is your first time seeking WJRH sponsorship, you can view an [example letter](/example-sponsorship-proposal/).
+If this is your first time seeking WJRH sponsorship, you can view an [example letter](/events/example-sponsorship-proposal/).
 
 We reserve the right to refuse sponsorship.
 

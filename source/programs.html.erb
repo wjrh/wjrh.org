@@ -1,14 +1,11 @@
-<div class="row">
-	<div class="twelve columns">
-		<!-- <img src="https://placeholdit.imgix.net/~text?txtsize=90&bg=104235&txtclr=28e7b5&txt=960%C3%97480&w=960&h=480"> -->
-	</div>
-</div>
 <div class="row main-title">
-	<div class="twelve columns">
+	<h1>Programs</h1>
+</div>
+<div class="row">
     <% @programs.each do |program| %>
-  		<h1><%= program['name'] %></h1>
+    <div class="three columns">
+    	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
+  		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
+  		</div>
     <% end %>
-	</div>
-	<div class="ten columns offset-by-one column">
-	</div>
 </div>

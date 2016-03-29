@@ -1,7 +1,7 @@
 <div class="row">
 	
 	<div class="twelve columns covercontainer">
-		<%= tag :img, :src => "http://media.wjrh.org/vbb/vbb-cover.jpg", :class => "coverimage" %>
+		<%= tag :img, :src => program["cover_image"], :class => "coverimage" %>
 	</div>
 </div>
 <div class="row program-info">
@@ -14,20 +14,27 @@
 </div>
 
 	<div class="program-episodes">
-		<% program['episodes'].reverse.each do |episode| %>
+		<% program['episodes'].sort { |a,b| a['pubdate'] <=> b['pubdate'] }.reverse.each do |episode| %>
 		<div class="row">
 			<div class="three columns offset-by-one">
+				<a href="/<%=program['shortname']%>/<%=episode['id']%>">
+				<% if not (episode['image'].nil? or episode['image'].eql?("")) %>
 				<%= tag :img, :src => episode['image'], :style => "width: 100%" %>
+				<% else %>
+				<renan></renan>
+				<%= tag :img, :src => program['image'], :style => "width: 100%" %>
+				<% end %>
+				</a>
 				<br>
 				<br>
 				<p>
-					<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode["length"] %><br>
+					<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode['length'] %><br>
 					<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse(episode['pubdate']).strftime("%b %-d, %Y") %><br>
 					<i class="fa fa-download"></i> <a href="<%= episode["audio_url"] %>">Download episode</a>
 					</p>
 			</div>
 			<div class="seven columns">
-					<h3><%= episode['name'] %></h3>
+					<a style="text-decoration:none" href="/<%=program['shortname']%>/<%=episode['id']%>"><h3><%= episode['name'] %></h3></a>
 
 					<p><% if not episode['description'].nil?%> <%= Tilt['markdown'].new { episode['description'] }.render  %> <% end %></p>
 					<audio class="episode-audio" controls preload="none">
