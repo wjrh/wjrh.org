@@ -1,11 +1,13 @@
 <div class="row main-title">
 	<h1>Programs</h1>
 </div>
+<% @programs.each_slice(4) do |four_programs| %>
 <div class="row">
-    <% @programs.each do |program| %>
+    <% four_programs.each do |program| %>
     <div class="three columns">
     	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
   		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
   		</div>
     <% end %>
 </div>
+ <% end %>
