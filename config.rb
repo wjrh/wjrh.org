@@ -2,6 +2,7 @@ require 'json'
 require 'net/http'
 require 'nokogiri'
 require 'dotenv'
+require 'open-uri'
 Dotenv.load
 
 ###
@@ -24,25 +25,19 @@ TEAL_URL = "api.teal.cool"
 
 
 # retrieve program information
-programs_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/organizations/wjrh")
-req = Net::HTTP::Get.new(programs_req_url.path)
-req.body = @show.to_json
-# req.add_field("teal-api-key", ENV["TEAL_KEY"])
-response = Net::HTTP.new(programs_req_url.host, programs_req_url.port).start {|http| http.request(req) }
-@programs = JSON.parse(response.body)
+response = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/organizations/wjrh").read
+@programs = JSON.parse(response)
 @programs.each do |programPreview|
   programPreview['image'] = "https://placeholdit.imgix.net/~text?txtsize=400&txt=#{programPreview["name"]}&w=1400&h=1400" if (programPreview['image'].nil? or programPreview['image'].eql?(""))
-  program_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{programPreview['shortname']}")
-  program_req = Net::HTTP.get_response(program_req_url)
-  program = JSON.parse(program_req.body)
+  program_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{programPreview['shortname']}").read
+  program = JSON.parse(program_req)
   program['image'] = "https://placeholdit.imgix.net/~text?txtsize=400&txt=#{program["name"]}&w=1400&h=1400" if (program['image'].nil? or program['image'].eql?(""))
   program['episodes'].each {|episode| convtime(episode)}
   proxy "/#{programPreview['shortname']}.html", "/templates/program.html", :locals => { :program => program, :title => program["name"] },:ignore => true
   proxy "/#{programPreview['shortname']}/feed.xml", "/templates/feed.html", :locals => { :program => program, :title => program["name"]},:ignore => true, :directory_index => false, :layout => false
   program['episodes'].each do |episode|
-    ep_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/episodes/#{episode['id']}")
-    ep_req = Net::HTTP.get_response(ep_req_url)
-    ep = JSON.parse(ep_req.body)
+    ep_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/episodes/#{episode['id']}").read
+    ep = JSON.parse(ep_req)
     p ep
     convtime(ep)
     ep['image'] = program['image'] if (ep['image'].nil? or ep['image'].eql?(""))
@@ -108,9 +103,8 @@ activate :automatic_image_sizes
 
   
   def generatefeed(program)
-    programs_req_url = URI.parse("http://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{program['shortname']}/feed.xml")
-    programs_req = Net::HTTP.get_response(programs_req_url)
-    return programs_req.body
+    programs_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/programs/#{program['shortname']}/feed.xml").read
+    return programs_req
   end
  end
 
