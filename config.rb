@@ -18,7 +18,7 @@ TEAL_URL = "api.teal.cool"
 
   def convtime(episode)
     if (!episode['length'].eql?("") and !episode['length'].nil? and !episode['length'].include?(":"))
-    episode['length'] = Time.at(episode['length'].to_i).utc.strftime("%M:%S")
+    episode['length'] = Time.at(episode['length'].to_i).utc.strftime("%H:%M:%S")
     end
   end
 
@@ -38,7 +38,7 @@ response = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/organizations/wjrh"
   program['episodes'].each do |episode|
     ep_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/episodes/#{episode['id']}").read
     ep = JSON.parse(ep_req)
-    p ep
+    p ep['name']
     convtime(ep)
     ep['image'] = program['image'] if (ep['image'].nil? or ep['image'].eql?(""))
     proxy "/#{program['shortname']}/#{ep['id']}.html", "/templates/episode.html", :locals => { :ep => ep, :title => ep["name"], :program => program },:ignore => true
