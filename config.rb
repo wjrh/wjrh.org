@@ -33,15 +33,18 @@ response = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/organizations/wjrh"
   program = JSON.parse(program_req)
   program['image'] = "https://placeholdit.imgix.net/~text?txtsize=400&txt=#{program["name"]}&w=1400&h=1400" if (program['image'].nil? or program['image'].eql?(""))
   program['episodes'].each {|episode| convtime(episode)}
-  proxy "/#{programPreview['shortname']}.html", "/templates/program.html", :locals => { :program => program, :title => program["name"] },:ignore => true
-  proxy "/#{programPreview['shortname']}/feed.xml", "/templates/feed.html", :locals => { :program => program, :title => program["name"]},:ignore => true, :directory_index => false, :layout => false
-  program['episodes'].each do |episode|
-    ep_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/episodes/#{episode['id']}").read
-    ep = JSON.parse(ep_req)
-    p ep['name']
-    convtime(ep)
-    ep['image'] = program['image'] if (ep['image'].nil? or ep['image'].eql?(""))
-    proxy "/#{program['shortname']}/#{ep['id']}.html", "/templates/episode.html", :locals => { :ep => ep, :title => ep["name"], :program => program },:ignore => true
+  if program['episodes'].length != 0
+    proxy "/#{programPreview['shortname']}.html", "/templates/program.html", :locals => { :program => program, :title => program["name"] },:ignore => true
+    proxy "/#{programPreview['shortname']}/feed.xml", "/templates/feed.html", :locals => { :program => program, :title => program["name"]},:ignore => true, :directory_index => false, :layout => false
+    program['episodes'].each do |episode|
+      ep_req = URI.parse("https://#{ENV["TEAL_URL"] ||=TEAL_URL}/episodes/#{episode['id']}").read
+      ep = JSON.parse(ep_req)
+      p ep['name']
+      convtime(ep)
+      ep['image'] = program['image'] if (ep['image'].nil? or ep['image'].eql?(""))
+      ep['cover_image'] = "https://placeholdit.imgix.net/~text?txtsize=50&txt=#{program["name"]}&w=960&h=480" if (ep['image'].nil? or ep['image'].eql?(""))
+      proxy "/#{program['shortname']}/#{ep['id']}.html", "/templates/episode.html", :locals => { :ep => ep, :title => ep["name"], :program => program },:ignore => true
+    end
   end
 end
 
