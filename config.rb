@@ -48,8 +48,6 @@ programs.each do |programPreview|
     end
   end
 end
-p @programs
-
 
 
 page "*.md", :layout => "markdown"
