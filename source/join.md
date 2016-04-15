@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist1.jpg
+image: http://i.imgur.com/tVM8UMH.jpg?1
 ---
 
 # Joining WJRH

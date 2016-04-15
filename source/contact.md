@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist6.jpg
+image: http://i.imgur.com/LYOZ7om.jpg?1
 ---
 
 

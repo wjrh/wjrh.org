@@ -14,25 +14,18 @@ title: WJRH
 		<h1>Coming up: denitia and sene.</h1>
 	</div>
 	<div class="ten columns offset-by-one column">
-		<p>(Postponed due to a <%= link_to 'health emergency on campus.', 'https://news.lafayette.edu/2016/03/09/update-on-health-alert-wednesday-march-9/' %> Check back for details soon.)<br/><br/>Formed in 2011, the Brooklyn-based group <a href="http://www.denitiaandsene.com/">denitia and sene.</a> has released one full-length album, a handful of singles, and two EPs—all of which show off the band’s ability to move seamlessly between pure pop, subdued electronica, and slinky R&amp;B with a sound that brings to mind everything from Massive Attack, The Fugees, or the shadowy late-night atmospherics of The XX. <s>You will see them live on campus this week.</s> denitia and sene will be rescheduled later in the semester. <%= link_to 'more events', '/events' %>.</p>
+		<p>Formed in 2011, the Brooklyn-based group <a href="http://www.denitiaandsene.com/">denitia and sene.</a> has released one full-length album, a handful of singles, and two EPs—all of which show off the band’s ability to move seamlessly between pure pop, subdued electronica, and slinky R&amp;B with a sound that brings to mind everything from Massive Attack, The Fugees, or the shadowy late-night atmospherics of The XX. <%= link_to 'more events', '/events' %>.</p>
 	</div>
 </div>
-
+<br>
 <div class="row">
-	<div class="twelve columns">
-		 <%= tag :img, :src =>  data.domains.media + "/vbb/vbb-cover.jpg"%> 
-		<!-- <video src="<%= data.domains.media %>/video/hcm2.mp4" autoplay loop muted width="960"></video> -->
-	</div>
+    <% @programs.sample(4).each do |program| %>
+    <div class="three columns">
+    	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
+  		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
+  		</div>
+    <% end %>
 </div>
-<div class="row main-title">
-	<div class="twelve columns">
-		<h1>Listen: Various Breads and Butters</h1>
-	</div>
-	<div class="ten columns offset-by-one column">
-		<p>Simon Tonev and B.R. Cohen talk to each other and humans about important things, solving problems, taking quizzes, learning lessons on Lafayette College's WJRH. <%= link_to 'view show', '/vbb' %>.</p>
-	</div>
-</div>
-
 
 <!-- <div class="row featured">
 	<div class="four columns">
