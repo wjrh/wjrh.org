@@ -5,18 +5,25 @@ title: WJRH
 
 <div class="row">
 	<div class="twelve columns">
-		 <%= tag :img, :src =>  data.domains.media + "/website-highlight/sene.jpg"%> 
-		<!-- <video src="<%= data.domains.media %>/video/hcm2.mp4" autoplay loop muted width="960"></video> -->
+		<video src="<%= data.domains.media %>/video/pardee.mp4" autoplay loop muted width="960"></video>
 	</div>
 </div>
 <div class="row main-title">
+	<div class="twelve columns">
+		<h1>Summer's here!</h1>
+	</div>
+	<div class="ten columns offset-by-one column">
+		<p>In our 70th year, we're bringing the best music from the east coast to Lafayette. Check our site soon to find out what's happening at WJRH in the upcoming Fall semester &amp; keep listening to our pre-recorded shows online. In the meantime, enjoy summer and our reduced schedule for the summer. <%= link_to 'View recorded programs', '/programs' %>.</p>
+	</div>
+</div>
+<!-- <div class="row main-title">
 	<div class="twelve columns">
 		<h1>Coming up: denitia and sene.</h1>
 	</div>
 	<div class="ten columns offset-by-one column">
 		<p>Formed in 2011, the Brooklyn-based group <a href="http://www.denitiaandsene.com/">denitia and sene.</a> has released one full-length album, a handful of singles, and two EPs—all of which show off the band’s ability to move seamlessly between pure pop, subdued electronica, and slinky R&amp;B with a sound that brings to mind everything from Massive Attack, The Fugees, or the shadowy late-night atmospherics of The XX. <%= link_to 'more events', '/events' %>.</p>
 	</div>
-</div>
+</div> -->
 <br>
 <div class="row">
     <% @programs.sample(4).each do |program| %>
