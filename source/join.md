@@ -11,4 +11,4 @@ You can join the station as a DJ anytime, however, in the beginning of every sea
 
 New schedules are publised in the beginning of every season on our website and shows start typically on the second weeks on Summer and Spring and on the third week of the Fall semester. Exact semester schedules can be found on the Lafayette College website.
 
-The next general body meeting will be held on February 2nd, 2016 at 8PM in the Jaqua Auditorium (Room 103) in the Hugel Science Center. If you are not a Lafayette College student, we can easily arrange accomodations and special training at this meeting. Any questions can be directed to the [program director](/team).
+The next general body meeting will be held on Thursday, September 8th, 2016 at 8PM in the Jaqua Auditorium (Room 103) in the Hugel Science Center. If you are not a Lafayette College student, we can easily arrange accomodations and special training at this meeting. Any questions can be directed to the [program director](/team).
