@@ -8,17 +8,22 @@
 		<br>
 		<p>
 			<a href="/<%=program['shortname']%>/"><%= program['name'] %></a><br>
+			<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse( ep['pubdate'] ) %>
+			<% if ep["audio_url"].to_s.strip.length != 0 %>
 			<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= ep["length"] %><br>
-			<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse( ep['pubdate'] ).strftime("%b %-d, %Y") if not ep['pubdate'].nil? %><br>
+			strftime("%b %-d, %Y") if not ep['pubdate'].nil? %><br>
 			<i class="fa fa-download"></i> <a href="<%= ep["audio_url"] %>">Download episode</a>
+			<% end %>
 		</p>
 	</div>
 	<div class="seven columns">
 		<h3><%= ep['name'] %></h3>
 		<p><% if not ep['description'].nil?%> <%= Tilt['markdown'].new { ep['description'] }.render  %> <% end %></p>
+		<% if ep["audio_url"].to_s.strip.length != 0 %>
 		<audio class="episode-audio" controls preload="none">
 			<source src="<%= ep["audio_url"] %>" type="<%= ep["type"] %>"></source>
 		</audio>
+		<% end %>
 	</div>
 </div>
 
