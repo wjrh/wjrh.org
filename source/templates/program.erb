@@ -28,18 +28,22 @@
 				<br>
 				<br>
 				<p>
-					<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode['length'] %><br>
 					<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse(episode['pubdate']).strftime("%b %-d, %Y") %><br>
-					<i class="fa fa-download"></i> <a href="<%= episode["audio_url"] %>">Download episode</a>
+					<% if episode["audio_url"].to_s.strip.length != 0 %>
+						<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode['length'] %><br>
+						<i class="fa fa-download"></i><a href="<%= episode["audio_url"] %>">Download episode</a>
+					<% end %>
 					</p>
 			</div>
 			<div class="seven columns">
 					<a style="text-decoration:none" href="/<%=program['shortname']%>/<%=episode['id']%>"><h3><%= episode['name'] %></h3></a>
 
 					<p><% if not episode['description'].nil?%> <%= Tilt['markdown'].new { episode['description'] }.render  %> <% end %></p>
+					<% if episode["audio_url"].to_s.strip.length != 0 %>
 					<audio class="episode-audio" controls preload="none">
 					  <source src="<%= episode["audio_url"] %>" type="<%= episode["type"] %>">
 					</audio>
+					<% end %>
 			</div>
 		</div>
 		<div class="line ten columns offset-by-one"></div>
