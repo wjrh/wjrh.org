@@ -31,11 +31,6 @@ Time: 11:59pm - 2am
 
 ## Sunday
 
-**Primary Colors**  
-Host: Cathy Ye  
-Genre: Indie Rock  
-Time: 4pm - 5pm  
-
 **Snaxx**  
 Host: DJ Party Mix  
 Time: 8pm - 9pm  
