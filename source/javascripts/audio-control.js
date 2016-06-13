@@ -2,7 +2,7 @@
 
 var audioElement = document.createElement('audio');
 audioElement.src = "http://wjrh.org:8000/WJRHlow";
-audioElement.preload = 'auto';
+audioElement.preload = 'none';
 
 var playClicked = false;
 var loaded = false;
