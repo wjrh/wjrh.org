@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist3.jpg
+image: https://i.imgur.com/FV17EUy.jpg
 ---
 
 # Sponsorship

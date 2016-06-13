@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://i.imgur.com/tVM8UMH.jpg?1
+image: https://i.imgur.com/tVM8UMH.jpg?1
 ---
 
 # Joining WJRH

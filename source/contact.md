@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://i.imgur.com/LYOZ7om.jpg?1
+image: https://i.imgur.com/LYOZ7om.jpg?1
 ---
 
 

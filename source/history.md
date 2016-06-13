@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist9.jpg
+image: https://imgur.com/Y4xsNPF.jpg
 ---
 
 #History

@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist6.jpg
+image: https://i.imgur.com/Y4xsNPF.jpg
 ---
 
 # Board member onboarding

@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist3.jpg
+image: https://i.imgur.com/QT2gYql.jpg
 ---
 
 # Example Sponsorship Proposal

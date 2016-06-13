@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist2.jpg
+image: https://i.imgur.com/SUq2Tvq.jpg
 ---
 
 # How to Get Your Music Played

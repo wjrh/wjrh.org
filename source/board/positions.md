@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/culture2.jpg
+image: https://i.imgur.com/pzPkGjz.jpg
 ---
 
 # Board Positions

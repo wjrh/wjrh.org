@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist8.jpg
+image: https://i.imgur.com/uNEp71x.jpg
 ---
 
 # Summer schedule

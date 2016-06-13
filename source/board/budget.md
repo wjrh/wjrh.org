@@ -1,6 +1,6 @@
 ---
 layout: "simple-static"
-image: http://media.wjrh.org/website-highlight/artist6.jpg
+image: https://i.imgur.com/SUq2Tvq.jpg
 ---
 
 # Using and preparing the WJRH Budget
