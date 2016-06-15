@@ -18,17 +18,47 @@ setInterval( "updateSongInfo();", 4000 );
 $(function() {
 	updateSongInfo = function(){
 
-		var djdata = document.getElementById('djdata');
-		$('#djdata').load("http://wjrh.org/show_dj.php").fadeIn("slow");
-		$('#songdata').load("http://wjrh.org/show_song.php").fadeIn("slow");
-	}
+		// var djdata = document.getElementById('djdata');
+		// $('#djdata').load("https://wjrh.org/show_dj.php").fadeIn("slow");
+		// $('#songdata').load("https://wjrh.org/show_song.php").fadeIn("slow");
+
+		$.getJSON("https://api.teal.cool/organizations/wjrh/latest", function( data ) {
+			println(data);
+		  if (data.event === "track-log") {
+		  	$("#nowplaying-dj").show();
+		  	$("#nowplaying-song").show();
+		  	$('#djdata').html(data.program.author);
+		  	$('#songdata').html(track.artist + " - " + track.title);
+		  } else if (data.event === "episode-start") {
+		  	$("#nowplaying-dj").show();
+		  	$("#nowplaying-song").hide();
+				$('#djdata').html(data.program.author);
+		  } else if (data.event === "episode-end"){
+		  	$("#nowplaying-dj").hide();
+		  	$("#nowplaying-song").hide();
+		  } else {}
+	  });
 });
 
 //first refresh
 $(document).ready(function(){
-	var djdata = document.getElementById('djdata');
-	$('#djdata').load("http://wjrh.org/show_dj.php").fadeIn("slow");
-	$('#songdata').load("http://wjrh.org/show_song.php").fadeIn("slow");
+	$.getJSON("https://api.teal.cool/organizations/wjrh/latest", function( data ) {
+			println(data);
+		  if (data.event === "track-log") {
+		  	$("#nowplaying-dj").show();
+		  	$("#nowplaying-song").show();
+		  	$('#djdata').html(data.program.author);
+		  	$('#songdata').html(track.artist + " - " + track.title);
+		  } else if (data.event === "episode-start") {
+		  	$("#nowplaying-dj").show();
+		  	$("#nowplaying-song").hide();
+				$('#djdata').html(data.program.author);
+		  } else if (data.event === "episode-end"){
+		  	$("#nowplaying-dj").hide();
+		  	$("#nowplaying-song").hide();
+		  } else {}
+	  });
+	updateSongInfo();
 });
 
 
