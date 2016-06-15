@@ -23,10 +23,10 @@ $(function() {
 		// $('#songdata').load("https://wjrh.org/show_song.php").fadeIn("slow");
 
 		$.getJSON("https://api.teal.cool/organizations/wjrh/latest", function( data ) {
-			println(data);
+			console.log(data);
 		  if (data.event === "track-log") {
 		  	$("#nowplaying-dj").show();
-		  	$("#nowplaying-song").show();
+		  	$("#nowplaying-song").show(); 
 		  	$('#djdata').html(data.program.author);
 		  	$('#songdata').html(track.artist + " - " + track.title);
 		  } else if (data.event === "episode-start") {
@@ -38,7 +38,6 @@ $(function() {
 		  	$("#nowplaying-song").hide();
 		  } else {}
 	  });
-});
 
 //first refresh
 	updateSongInfo();
