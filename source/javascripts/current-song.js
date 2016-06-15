@@ -15,34 +15,30 @@
 //recurring refreshes
 setInterval( "updateSongInfo();", 4000 );
 
-$(function() {
-	updateSongInfo = function(){
 
-		// var djdata = document.getElementById('djdata');
-		// $('#djdata').load("https://wjrh.org/show_dj.php").fadeIn("slow");
-		// $('#songdata').load("https://wjrh.org/show_song.php").fadeIn("slow");
-
+var updateSongInfo = function(){
 		$.getJSON("https://api.teal.cool/organizations/wjrh/latest", function( data ) {
-			console.log(data);
+			console.log("latest events updated");
 		  if (data.event === "track-log") {
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").show(); 
-		  	$('#djdata').html(data.program.author);
-		  	$('#songdata').html(track.artist + " - " + track.title);
+		  	$('#djdata').html(data.program.name);
+		  	$('#songdata').html(data.track.artist + " - " + data.track.title);
 		  } else if (data.event === "episode-start") {
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
-				$('#djdata').html(data.program.author);
+				$('#djdata').html(data.program.name);
 		  } else if (data.event === "episode-end"){
-		  	$("#nowplaying-dj").hide();
+		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
+		  	$('#djdata').html("WJRH Summer RoboDJ");
 		  } else {}
-	  });
+	  })
+	}
 
-//first refresh
+$(document).ready(function(){
 	updateSongInfo();
 });
-
 
 var checkData = function(){
 	if (($("#songdata").text().length + $("#djdata").text().length > 160) || $("#djdata").text() == "WJRH RoboDJ\n"){
