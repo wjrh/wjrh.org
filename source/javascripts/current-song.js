@@ -22,12 +22,12 @@ var updateSongInfo = function(){
 		  if (data.event === "track-log") {
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").show(); 
-		  	$('#djdata').html(data.program.name);
+		  	$('#djdata').html(data.program.name + " with " + data.program.author);
 		  	$('#songdata').html(data.track.artist + " - " + data.track.title);
 		  } else if (data.event === "episode-start") {
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
-				$('#djdata').html(data.program.name);
+				$('#djdata').html(data.program.name + " with " + data.program.author);
 		  } else if (data.event === "episode-end"){
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
