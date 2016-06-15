@@ -41,23 +41,6 @@ $(function() {
 });
 
 //first refresh
-$(document).ready(function(){
-	$.getJSON("https://api.teal.cool/organizations/wjrh/latest", function( data ) {
-			println(data);
-		  if (data.event === "track-log") {
-		  	$("#nowplaying-dj").show();
-		  	$("#nowplaying-song").show();
-		  	$('#djdata').html(data.program.author);
-		  	$('#songdata').html(track.artist + " - " + track.title);
-		  } else if (data.event === "episode-start") {
-		  	$("#nowplaying-dj").show();
-		  	$("#nowplaying-song").hide();
-				$('#djdata').html(data.program.author);
-		  } else if (data.event === "episode-end"){
-		  	$("#nowplaying-dj").hide();
-		  	$("#nowplaying-song").hide();
-		  } else {}
-	  });
 	updateSongInfo();
 });
 
