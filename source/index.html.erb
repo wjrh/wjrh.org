@@ -17,49 +17,11 @@ title: WJRH
 		<p>In our 70th year, we're bringing the best music from the east coast to Lafayette. We're looking forward to welcoming new weekly programs to our station this fall. Check our site during September for our updated Fall semester schedule &amp; keep listening to our pre-recorded shows online.  <%= link_to 'View recorded programs', '/programs' %>.</p>
 	</div>
 </div>
-<!-- <div class="row main-title">
-	<div class="twelve columns">
-		<h1>Coming up: denitia and sene.</h1>
-	</div>
-	<div class="ten columns offset-by-one column">
-		<p>Formed in 2011, the Brooklyn-based group <a href="http://www.denitiaandsene.com/">denitia and sene.</a> has released one full-length album, a handful of singles, and two EPs—all of which show off the band’s ability to move seamlessly between pure pop, subdued electronica, and slinky R&amp;B with a sound that brings to mind everything from Massive Attack, The Fugees, or the shadowy late-night atmospherics of The XX. <%= link_to 'more events', '/events' %>.</p>
-	</div>
-</div> -->
-<br>
 <div class="row">
-    <% @programs.slice(@programs.length / 2, @programs.length).sample(4).each do |program| %>
+    <% @programs.sample(4).each do |program| %>
     <div class="three columns">
     	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
   		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
   		</div>
     <% end %>
 </div>
-<div class="row">
-    <% @programs.slice(0,@programs.length / 2).sample(4).each do |program| %>
-    <div class="three columns">
-    	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
-  		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
-  		</div>
-    <% end %>
-</div>
-
-<!-- <div class="row featured">
-	<div class="four columns">
-		<video src="<%= data.domains.media %>/video/disco.mp4" autoplay loop muted width="300"></video>
-		<h6>Mondays at 5PM</h6>
-		<h4>BassIQ Radio with Saleem James</h4>
-		<p>From dance to electronic to lounge, Saleem James presents his eclectic taste in music in this show. Perfect for speeding on the autobahn or for romanticizing a life on another planet, or maybe just in another country.</p>
-	</div>
-	<div class="four columns">
-		<video src="<%= data.domains.media %>/video/newspaper.mp4" autoplay loop muted width="300"></video>
-		<h6>Special Report</h6>
-		<h4><a href="http://newspaper.wjrh.org">Situation of the Newspaper  <i class="fa fa-external-link"></i></a></h4>
-		<p>The Lafayette, the oldest student newspaper in Pennsylvania, came up with an unexpected announcement saying that they are in threat of shutting down because of underfunding. Listen to a response from the Student Government Treasurer Ricky Lanzilotti. Interview by Ivan Evtimov and The Jay.</p>
-	</div>
-	<div class="four columns">
-		<video src="<%= data.domains.media %>/video/indie.mp4" autoplay loop muted width="300"></video>
-		<h6>Mondays at 4PM</h6>
-		<h4>Indie Dependent with DJ El Train</h4>
-		<p>A source of all things indie and obscure, Indie Dependent aims to bring music you may not have heard to your ears. Some of it's mellow and chill, some of it's odd and off-the-wall, and all of it's less than mainstream. Listen to Indie Dependent every Monday at 4 pm and you're guaranteed to stay weird.</p>
-	</div>
-</div> -->

@@ -31,7 +31,7 @@
 					<i class="fa fa-calendar"></i> <strong>Released on</strong> <%= DateTime.parse(episode['pubdate']).strftime("%b %-d, %Y") %><br>
 					<% if episode["audio_url"].to_s.strip.length != 0 %>
 						<i class="fa fa-clock-o"></i> <strong>Length:</strong> <%= episode['length'] %><br>
-						<i class="fa fa-download"></i><a href="<%= episode["audio_url"] %>">Download episode</a>
+						<i class="fa fa-download"></i> <a href="<%= episode["audio_url"] %>">Download episode</a>
 					<% end %>
 					</p>
 			</div>
