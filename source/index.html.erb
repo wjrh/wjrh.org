@@ -3,15 +3,17 @@ title: WJRH
 ---
 <div class="row">
   <div class="twelve columns">
-    <img src="https://i.imgur.com/Vo1MFPw.jpg" />
+    <video src="http://wjrh.org.s3.amazonaws.com/s.ogv" autoplay loop muted width="960">
+      <img src="https://i.imgur.com/Vo1MFPw.jpg" />
+    </video>
   </div>
 </div>
 <div class="row main-title">
 	<div class="twelve columns">
-		<h1>Summer's here!</h1>
+		<h1>Welcoming New Programs for Fall</h1>
 	</div>
 	<div class="ten columns offset-by-one column">
-		<p>In our 70th year, we're bringing the best music from the east coast to Lafayette. Check our site soon to find out what's happening at WJRH in the upcoming Fall semester &amp; keep listening to our pre-recorded shows online. In the meantime, enjoy summer and our reduced schedule for the summer. <%= link_to 'View recorded programs', '/programs' %>.</p>
+		<p>In our 70th year, we're bringing the best music from the east coast to Lafayette, broadcasting 24/7 from Pardee Hall. We're looking forward to welcoming new weekly programs to our station this fall. Check our site during September for our updated Fall semester schedule &amp; keep listening to our pre-recorded shows online.  <%= link_to 'View recorded programs', '/programs' %>.</p>
 	</div>
 </div>
 <!-- <div class="row main-title">
@@ -24,7 +26,15 @@ title: WJRH
 </div> -->
 <br>
 <div class="row">
-    <% @programs.sample(4).each do |program| %>
+    <% @programs.slice(@programs.length / 2, @programs.length).sample(4).each do |program| %>
+    <div class="three columns">
+    	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
+  		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
+  		</div>
+    <% end %>
+</div>
+<div class="row">
+    <% @programs.slice(0,@programs.length / 2).sample(4).each do |program| %>
     <div class="three columns">
     	<a href="/<%=program['shortname']%>"><%= tag :img, :src => program['image'], :style => "width: 100%" %></a>
   		<a href="/<%=program['shortname']%>"><h6><%= program['name'] %></h6></a>
