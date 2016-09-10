@@ -31,7 +31,7 @@ var updateSongInfo = function(){
 		  } else if (data.event === "episode-end"){
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
-		  	$('#djdata').html("WJRH `RoboDJ");
+		  	$('#djdata').html("WJRH RoboDJ");
 		  } else {}
 	  })
 	}
