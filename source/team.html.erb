@@ -17,7 +17,6 @@
 	<div class="row">
 		<% member_group.each do |member| %>
 			<div class="three columns">
-				<%= tag :img, :src => member.image, :class => "boardmember" %>
 		  		<strong><%= member.name %> '<%= member.year %></strong><br>
 		  		<%= member.role %>
 		  	</div>
