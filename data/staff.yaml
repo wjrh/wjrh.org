@@ -1,4 +1,13 @@
 ---
+board2017:
+  - name:  example
+    year:  19
+    role:  Recording Studio  
+
+  - name:  example2
+    year:  20
+    role:  Recording Studio
+    
 board2016:
   - name:  Joe Sluke
     year:  17
