@@ -11,118 +11,95 @@ board2017:
 board2016:
   - name:  Joe Sluke
     year:  17
-    image: http://media.wjrh.org/2016board/sluke.gif
     role:  General Manager
 
   - name:  Iris Xu
     year:  17
-    image: http://media.wjrh.org/2016board/xu.gif
     role:  Program Manager
 
   - name:  Kyle Street
     year:  19
-    image: http://media.wjrh.org/2016board/street.gif
     role:  Treasurer
 
   - name:  Marci Weinstein
     year:  17
-    image: http://media.wjrh.org/2016board/weber.gif
     role:  Vice General Manager
 
   - name:  Michelle Polton-Simon
     year:  19
-    image: http://media.wjrh.org/2016board/poltonsimon.gif
     role:  Engineering
 
   - name:  Jazmin Turner
     year:  18
-    image: http://media.wjrh.org/2016board/turner.gif
     role:  Events Director
 
   - name:  Natalie Soler
     year:  19
-    image: http://media.wjrh.org/2016board/soler.gif
     role:  Secretary
 
   - name:  Frankie Illuzzi
     year:  18
-    image: http://media.wjrh.org/2016board/illuzzi.gif
     role:  Public Relations
 
   - name:  Jake Garber
     year:  18
-    image: http://media.wjrh.org/2016board/garber.gif
     role:  Music Director
 
 board2015:
   - name:  Mac Jones
     year:  16
-    image: http://media.wjrh.org/board2015/2015_macjones.jpg
     role:  Recording Studio
 
   - name:  Frankie Illuzzi
     year:  18
-    image: http://media.wjrh.org/board2015/2015_frankieilluzzi.jpg
     role:  Public Relations
 
   - name:  Thomas Williams
     year:  18
-    image: http://media.wjrh.org/board2015/2015_thomaswilliams.jpg
     role:  Engineering
 
   - name:  Jaz Turner
     year:  18
-    image: http://media.wjrh.org/board2015/2015_jazminturner.jpg
     role:  Events Director
 
   - name:  Matt Marlin
     year:  16
-    image: http://media.wjrh.org/board2015/2015_mattmarlin.jpg
     role:  Music Director
 
   - name:  JJ Wanda
     year:  16
-    image: http://media.wjrh.org/board2015/2015_jjwanda.jpg
     role:  Software
 
   - name:  Willem Ytsma
     year:  16
-    image: http://media.wjrh.org/board2015/2015_willemytsma.jpg
     role:  Public Relations
 
   - name:  Joe Cericola
     year:  16
-    image: http://media.wjrh.org/board2015/2015_joecericola.jpg
     role:  Program Director
 
   - name:  Renan Dincer
     year:  16
-    image: http://media.wjrh.org/board2015/2015_renandincer.jpg
     role:  General Manager
 
   - name:  Marci Weinstein
     year:  17
-    image: http://media.wjrh.org/board2015/2015_marciweinstein.jpg
     role:  Asst. General Manager
 
   - name:  Joe Sluke
     year:  17
-    image: http://media.wjrh.org/board2015/2015_joesluke.jpg
     role:  Chief Engineer
 
   - name:  Mike Fogarty
     year:  17
-    image: http://media.wjrh.org/board2015/2015_mikefogarty.jpg
     role:  Treasurer
 
   - name:  Nora Hand
     year:  17
-    image: http://media.wjrh.org/board2015/2015_norahand.jpg
     role:  Secretary
 
   - name:  Jeremy Port
     year:  17
-    image: http://media.wjrh.org/board2015/2015_jeremyport.jpg
     role:  Engineering
 
 ...
