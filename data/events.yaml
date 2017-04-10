@@ -11,6 +11,26 @@
  # it is ok not to have pictures as long as "what", "when" and "where" is filled.
  # please follow YYYY-MM-DD order with dates
 ---
+- what: the Duskwhales
+  when: 2017-29-4 8pm
+  where: 643 Parsons St
+  imgur_album_id:
+  
+- what: Symposium/Kyle Duke and The Brown Bag Boys
+  when: 2017-08-4 6pm
+  where: The Quad
+  imgur_album_id:
+
+- what: George Clanton/Negative Gemini/ESPRIT空想
+  when: 2017-01-4 7:30pm
+  where: 624 Parsons St
+  imgur_album_id:
+
+- what: Dolly Spartans
+  when: 2017-03-24 8pm
+  where: 643 Parsons St
+  imgur_album_id:
+
 - what: G.U.M.P. with NappyNappa
   when: 2017-02-17 8pm
   where: Kirby House Lounge
