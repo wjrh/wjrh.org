@@ -16,7 +16,7 @@ We're always happy to sponsor/co-sponsor events held at Lafayette College, hoste
 - Concerts / Coffeehouse
 - Acacemic events/talks
 - Related career panels
-- Lafayette traditions (Fall Fest, Block PArty etc.)
+- Lafayette traditions (Fall Fest, Block pARTy etc.)
 - Other events that have music or broadcasting as a central theme
 
 #### Kinds of events we don't usually sponsor
