@@ -2,43 +2,53 @@
 board2017:
   - name:  Jazmin Turner
     year:  18
-    role:  General Manager  
+    role:  General Manager
+    email: 
 
   - name:  Michelle Polton-Simon
     year:  19
     role:  Vice General Manager
+    email: 
     
   - name:  Jake Cobleigh
     year:  19
-    role:  Treasurer  
+    role:  Treasurer
+    email: 
 
   - name:  Ben Gordon
     year:  19
     role:  Secretary
+    email: 
     
   - name:  Dilge Dilsiz
     year:  19
     role:  Program Director
+    email: 
     
   - name:  Xaviera Thomas
     year:  19
     role:  Events Director
+    email: 
 
   - name:  Reanna Kier
     year:  19
     role:  Public Relations Director
+    email: 
     
   - name:  Lauren Parkinson
     year:  20
     role:  Community Outreach Director
+    email: 
     
   - name:  Neil McEnerney
     year:  20
     role:  Music Director
+    email: 
     
   - name:  Peter Torrente
     year:  20 
     role:  Chief Engineer
+    email: torrentp@lafayette.edu
     
   - name:  Tracey Robinson
     year:  19
