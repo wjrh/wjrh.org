@@ -11,6 +11,21 @@
  # it is ok not to have pictures as long as "what", "when" and "where" is filled.
  # please follow YYYY-MM-DD order with dates
 ---
+- what: Juice
+  when: 2017-11-4 8:30pm
+  where: Kirby House Lounge
+  imgur_album_id:
+
+- what: Bonsai Trees
+  when: 2017-10-31 7pm
+  where: Interfaith House 619 Monroe Street
+  imgur_album_id:
+
+- what: Julia Julian
+  when: 2017-10-21 7pm
+  where: 643 Parsons St
+  imgur_album_id:
+  
 - what: the Duskwhales
   when: 2017-04-29 8pm
   where: Interfaith Chapel (Hogg Hall)
