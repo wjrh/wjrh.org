@@ -1,4 +1,20 @@
 ---
+board2018:
+  - name:  Ben Gordon
+    year:  19
+    role:  General Manager
+    email: gordonbc@lafayette.edu
+
+  - name:  Peter Torrente
+    year:  20
+    role:  Vice General Manager
+    email: torrentp@lafayette.edu
+    
+  - name:  Hayden Dodge
+    year:  19
+    role:  Chief Engineer
+    email: dodgeh@lafayette.edu
+    
 board2017:
   - name:  Jazmin Turner
     year:  18
