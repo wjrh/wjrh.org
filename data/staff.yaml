@@ -15,6 +15,54 @@ board2018:
     role:  Chief Engineer
     email: dodgeh@lafayette.edu
     
+  - name:  Matt Gerber
+    year:  20
+    role:  Treasurer
+    email: gerberm@lafayette.edu    
+    
+  - name:  Jake Cobleigh
+    year:  19
+    role:  Alumni Relations Director
+    email: cobleigj@lafayette.edu
+
+  - name:  Will Moustakakis
+    year:  20
+    role:  Secretary
+    email: moustakw@lafayette.edu
+    
+  - name:  Alex Berman
+    year:  20
+    role:  Program Director
+    email: bermana@lafayette.edu
+
+  - name:  Theresa Dao
+    year:  20
+    role:  Public Relations Director
+    email: daot@lafayette.edu
+    
+  - name:  Lauren Parkinson
+    year:  20
+    role:  Community Outreach Director
+    email: parkinsl@lafayette.edu
+    
+  - name:  Neil McEnerney
+    year:  20
+    role:  Music Director
+    email: mcenernn@lafayette.edu
+
+  - name:  Eric Last
+    year:  20
+    role:  Events Director
+    email: laste@lafayette.edu
+
+  - name:  Johnny Gossick
+    year:  18 
+    role:  Engineering    
+    
+  - name:  Clement Hathaway
+    year:  19
+    role:  Engineering  
+    
 board2017:
   - name:  Jazmin Turner
     year:  18
