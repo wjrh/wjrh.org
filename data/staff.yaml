@@ -58,10 +58,15 @@ board2018:
   - name:  Johnny Gossick
     year:  18 
     role:  Engineering    
-    
+
   - name:  Clement Hathaway
     year:  19
-    role:  Engineering  
+    role:  Engineering 
+    
+  - name:  Connor Winiarczyk
+    year:  20
+    role:  Engineering     
+    
     
 board2017:
   - name:  Jazmin Turner
