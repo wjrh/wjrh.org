@@ -11,6 +11,11 @@
  # it is ok not to have pictures as long as "what", "when" and "where" is filled.
  # please follow YYYY-MM-DD order with dates
 ---
+- what: Sixpress
+  when: 2018-17-2 6:00pm
+  where: 643 Parsons St
+  imgur_album_id:
+
 - what: Juice
   when: 2017-11-4 8:30pm
   where: Kirby House Lounge
