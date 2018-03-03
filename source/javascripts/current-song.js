@@ -33,8 +33,8 @@ var updateSongInfo = function(){
 			.then(res => res.json())
 			.then(body => {
 				const robo_data = {
-					title: body.icecast.source[0].title.split(" - ")[1],
-					artist: body.icecast.source[0].title.split(" - ")[0]
+					title: body.icestats.source[0].title.split(" - ")[1],
+					artist: body.icestats.source[0].title.split(" - ")[0]
 				};
 			})
 		  	$("#nowplaying-dj").show();
