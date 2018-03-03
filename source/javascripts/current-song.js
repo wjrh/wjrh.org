@@ -23,14 +23,23 @@ var updateSongInfo = function(){
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").show(); 
 		  	$('#djdata').html(data.program.name + " with " + data.program.author);
-		  	$('#songdata').html(data.track.artist + " - " + data.track.title);
+		  	$('#songdata').html(data.track.title + " - " + data.track.artist);
 		  } else if (data.event === "episode-start") {
 		  	$("#nowplaying-dj").show();
 		  	$("#nowplaying-song").hide();
 				$('#djdata').html(data.program.name + " with " + data.program.author);
 		  } else if (data.event === "episode-end"){
+		  	fetch("http://www.wjrh.org:8000/status-json.xsl")
+			.then(res => res.json())
+			.then(body => {
+				const robo_data = {
+					title: body.icecast.source[0].title.split(" - ")[1],
+					artist: body.icecast.source[0].title.split(" - ")[0]
+				};
+			})
 		  	$("#nowplaying-dj").show();
-		  	$("#nowplaying-song").hide();
+			$("#nowplaying-song").show();
+			$('#songdata').html(robo_data.title + " - " + robo_data.artist);	  	
 		  	$('#djdata').html("WJRH RoboDJ");
 		  } else {}
 	  })
