@@ -29,6 +29,11 @@ var updateSongInfo = function(){
 		  	$("#nowplaying-song").hide();
 				$('#djdata').html(data.program.name + " with " + data.program.author);
 		  } else if (data.event === "episode-end"){
+		  	$("#nowplaying-dj").show();
+			$("#nowplaying-song").show();	  	
+		  	$('#djdata').html("WJRH RoboDJ");
+			
+			// Get RoboDJ song metadata from icecast server
 			fetch("http://www.wjrh.org:8000/status-json.xsl")
 			.then(res => res.json())
 			.then(body => {
@@ -36,12 +41,12 @@ var updateSongInfo = function(){
 					title: body.icestats.source[0].title.split(" - ")[1],
 					artist: body.icestats.source[0].title.split(" - ")[0]
 				};
+				return robo_data;
+			})
+			.then(robo_data => {
+				$('#songdata').html(robo_data.title + " - " + robo_data.artist);
 			})
 			.catch(err => console.log(err.message))
-		  	$("#nowplaying-dj").show();
-			$("#nowplaying-song").show();
-			$('#songdata').html(robo_data.title + " - " + robo_data.artist);	  	
-		  	$('#djdata').html("WJRH RoboDJ");
 		  } else {}
 	  })
 	}
