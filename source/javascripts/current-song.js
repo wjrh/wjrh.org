@@ -29,7 +29,7 @@ var updateSongInfo = function(){
 		  	$("#nowplaying-song").hide();
 				$('#djdata').html(data.program.name + " with " + data.program.author);
 		  } else if (data.event === "episode-end"){
-		  	fetch("http://www.wjrh.org:8000/status-json.xsl")
+			fetch("http://www.wjrh.org:8000/status-json.xsl")
 			.then(res => res.json())
 			.then(body => {
 				const robo_data = {
@@ -37,6 +37,7 @@ var updateSongInfo = function(){
 					artist: body.icestats.source[0].title.split(" - ")[0]
 				};
 			})
+			.catch(err => console.log(err.message))
 		  	$("#nowplaying-dj").show();
 			$("#nowplaying-song").show();
 			$('#songdata').html(robo_data.title + " - " + robo_data.artist);	  	
