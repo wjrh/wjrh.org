@@ -1,8 +1,8 @@
 
 
 var audioElement = document.createElement('audio');
-audioElement.src = "http://wjrh.org:8000/WJRHlow";
-//audioElement.src = "http://wjrh.org:8000/RoboDJ";
+//audioElement.src = "http://wjrh.org:8000/WJRHlow";
+audioElement.src = "http://wjrh.org:8000/RoboDJ";
 audioElement.preload = 'none';
 
 var playClicked = false;
