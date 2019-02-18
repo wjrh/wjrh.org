@@ -13,7 +13,7 @@
 	</div>
 </div>
 
-<% data.staff.board2018.shuffle.each_slice(4) do |member_group| %>
+<% data.staff.board2019.shuffle.each_slice(4) do |member_group| %>
 	<div class="row">
 		<% member_group.each do |member| %>
 			<div class="three columns">
@@ -27,7 +27,7 @@
 <!-- <div class="row">
 	<div class="eight columns offset-by-two columns">
 			<h1>Black Light Committee</h1>
-		<% data.staff.board2015.select { |member| member.year < 17 }.shuffle.each do |member| %>
+		<% data.staff.board2019.select { |member| member.year < 17 }.shuffle.each do |member| %>
 		  		<strong><%= member.name %> '<%= member.year %></strong> (<%= member.role %>) 
 		<% end %>
 	</div>
