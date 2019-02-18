@@ -1,4 +1,65 @@
 ---
+board2019:
+  - name:  Neil McEnerney
+    year:  20
+    role:  General Manager
+    email: mcenernn@lafayette.edu
+
+  - name:  Matt Gerber
+    year:  20
+    role:  Vice General Manager
+    email: gerberm@lafayette.edu
+    
+  - name:  Connor Winiarczyk
+    year:  20
+    role:  Chief Engineer
+    email: winiarcc@lafayette.edu
+    
+  - name:  Calvin Sharp
+    year:  20
+    role:  Treasurer
+    email: sharpc@lafayette.edu    
+    
+  - name:  Alexandra Kasparian
+    year:  20
+    role:  Alumni Relations Director
+    email: kasparam@lafayette.edu
+
+  - name:  Will Moustakakis
+    year:  20
+    role:  Secretary
+    email: moustakw@lafayette.edu
+    
+  - name:  Alex Berman
+    year:  20
+    role:  Program Director
+    email: bermaale@lafayette.edu 
+
+  - name:  Leah Diamantides
+    year:  20
+    role:  Public Relations Director
+    email: diamantl@lafayette.edu
+    
+  - name:  Keon Modesty
+    year:  20
+    role:  Community Outreach Director
+    email: modestek@lafayette.edu
+    
+  - name:  Neil McEnerney
+    year:  20
+    role:  Music Director
+    email: mcenernn@lafayette.edu
+
+  - name:  Theresa Dao
+    year:  20
+    role:  Events Director
+    email: daot@lafayette.edu    
+
+  - name:  Clement Hathaway
+    year:  19
+    role:  Engineering 
+    
+
 board2018:
   - name:  Ben Gordon
     year:  19
