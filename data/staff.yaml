@@ -16,12 +16,12 @@ board2019:
     email: winiarcc@lafayette.edu
     
   - name:  Calvin Sharp
-    year:  20
+    year:  21
     role:  Treasurer
     email: sharpc@lafayette.edu    
     
   - name:  Alexandra Kasparian
-    year:  20
+    year:  22
     role:  Alumni Relations Director
     email: kasparam@lafayette.edu
 
@@ -40,15 +40,15 @@ board2019:
     role:  Public Relations Director
     email: diamantl@lafayette.edu
     
-  - name:  Keon Modesty
-    year:  20
+  - name:  Keon Modeste
+    year:  21
     role:  Community Outreach Director
     email: modestek@lafayette.edu
     
-  - name:  Neil McEnerney
-    year:  20
+  - name:  Grayce Walker
+    year:  22
     role:  Music Director
-    email: mcenernn@lafayette.edu
+    email: walkergr@lafayette.edu
 
   - name:  Theresa Dao
     year:  20
@@ -57,8 +57,17 @@ board2019:
 
   - name:  Clement Hathaway
     year:  19
-    role:  Engineering 
+    role:  Engineering
     
+  - name:  Peter Torrente
+    year:  20
+    role:  Media Director
+    email: torrentp@lafayette.edu
+    
+  - name:  Junise Nixon
+    year:  20
+    role:  Podcast Studio and Events Manager
+    email: nixonjc@lafayette.edu  
 
 board2018:
   - name:  Ben Gordon
