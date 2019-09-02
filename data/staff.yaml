@@ -1,14 +1,14 @@
 ---
 board2019:
-  - name:  Neil McEnerney
-    year:  20
-    role:  General Manager
-    email: mcenernn@lafayette.edu
-
   - name:  Matt Gerber
     year:  20
-    role:  Vice General Manager
+    role:  General Manager
     email: gerberm@lafayette.edu
+
+  - name:  Peter Torrente
+    year:  20
+    role:  Vice General Manager
+    email: torrentp@lafayette.edu
     
   - name:  Connor Winiarczyk
     year:  20
@@ -44,11 +44,6 @@ board2019:
     year:  21
     role:  Community Outreach Director
     email: modestek@lafayette.edu
-    
-  - name:  Grayce Walker
-    year:  22
-    role:  Music Director
-    email: walkergr@lafayette.edu
 
   - name:  Theresa Dao
     year:  20
@@ -58,16 +53,6 @@ board2019:
   - name:  Clement Hathaway
     year:  20
     role:  Engineering
-    
-  - name:  Peter Torrente
-    year:  20
-    role:  Media Director
-    email: torrentp@lafayette.edu
-    
-  - name:  Junise Nixon
-    year:  20
-    role:  Podcast Studio and Events Manager
-    email: nixonjc@lafayette.edu  
 
 board2018:
   - name:  Ben Gordon
