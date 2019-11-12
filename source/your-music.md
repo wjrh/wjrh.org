@@ -8,9 +8,7 @@ image: https://i.imgur.com/SUq2Tvq.jpg
 WJRH is a completely freeform radio station. This means that the station gives DJs time slots and each DJ selects all the music played on his or her show. DJs may play music from their personal collection and from the radio station library. There is minimal oversight of the music that is available for DJ consideration. We have a very large record collection and a lot of CDs in racks. We put up all the music we receive in a special 'new music' area before archiving them, but in the end what is played is in the DJs control.
 
 ##### Do you even listen to what we send you?
-Yeah, Jake Garber and Nicole Harry are DJs with special interest in new music. They are in charge of glance over most of the music sent to us and provide feedback. This does not mean that we will provice any feedback to you at all.
-
-The Music Director is not responsible for listening to all music submissions.We let each individual DJ decide what to spin. DJs are free to check out your tunes whenever they want.
+The Music Director is not responsible for listening to all music submissions. We let each individual DJ decide what to spin. DJs are free to check out your tunes whenever they want.
 
 ##### Do you have a medium or heavy rotation?
 No. All live DJs play whatever they want. This could mean that they can rickroll you 10 times in a row.
