@@ -1,4 +1,55 @@
 ---
+board2020:
+  - name:  Calvin Sharp
+    year:  21
+    role:  General Manager
+    email: sharpc@lafayette.edu
+
+  - name:  Alexandra Kasparian
+    year:  22
+    role:  Vice General Manager
+    email: torrentp@lafayette.edu
+    
+  - name:  Connor Winiarczyk
+    year:  20
+    role:  Chief Engineer
+    email: winiarcc@lafayette.edu
+    
+  - name:  Charlie Harper
+    year:  22
+    role:  Treasurer
+    email: harperc@lafayette.edu    
+    
+  - name:  Alex Coelho
+    year:  22
+    role:  Music Director
+    email: coelhoa@lafayette.edu
+
+  - name:  Danielle Mullan
+    year:  22
+    role:  Secretary
+    email: mulland@lafayette.edu
+    
+  - name:  Chelsea Daniels
+    year:  21
+    role:  Program Director
+    email: danielch@lafayette.edu 
+
+  - name:  Hannah George
+    year:  22
+    role:  Public Relations Director
+    email: georgeh@lafayette.edu
+    
+  - name:  Conor Bush
+    year:  21
+    role:  Community Outreach Director
+    email: bushc@lafayette.edu
+
+  - name:  Chelsea Daniels
+    year:  21
+    role:  Events Director
+    email: danielch@lafayette.edu    
+
 board2019:
   - name:  Matt Gerber
     year:  20
