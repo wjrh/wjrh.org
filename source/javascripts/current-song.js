@@ -34,7 +34,7 @@ var updateSongInfo = function(){
 		  	$('#djdata').html("WJRH RoboDJ");
 			
 			// Get RoboDJ song metadata from icecast server
-			fetch("http://www.wjrh.org:8000/status-json.xsl")
+			fetch("http://api.wjrh.org:8000/status-json.xsl")
 			.then(res => res.json())
 			.then(body => {
 				const robo_data = {
