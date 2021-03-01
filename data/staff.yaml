@@ -1,4 +1,59 @@
----
+---board2021:
+  - name:  Alexandra Kasparian
+    year:  22
+    role:  General Manager
+    email: kasparam@lafayette.edu
+
+  - name:  Hannah George
+    year:  22
+    role:  Vice General Manager
+    email: georgeh@lafayette.edu
+    
+  - name:  Travis King
+    year:  24
+    role:  Treasurer
+    email: harperc@lafayette.edu    
+
+  - name:  Danielle Mullan
+    year:  22
+    role:  Secretary
+    email: mulland@lafayette.edu
+    
+  - name:  Skye Loures
+    year:  24
+    role:  Program Director
+    email: danielch@lafayette.edu 
+
+  - name:  Jordan Lam
+    year:  23
+    role:  Public Relations Director
+    email: georgeh@lafayette.edu
+    
+  - name:  Tom Smith
+    year:  24
+    role:  Community Outreach Director
+    email: bushc@lafayette.edu
+
+  - name:  Cole Raymond
+    year:  22
+    role:  Events Director
+    email: danielch@lafayette.edu   
+    
+  - name:  Ian Duffy
+    year:  24
+    role:  Music Director
+    email: danielch@lafayette.edu  
+    
+  - name:  Julia Santaniello
+    year:  22
+    role:  Head Engineer
+    email: danielch@lafayette.edu  
+    
+  - name:  Emma Krasinski
+    year:  22
+    role:  Alumni Relations Director
+    email: kasparam@lafayette.edu
+    
 board2020:
   - name:  Calvin Sharp
     year:  21
