@@ -1,14 +1,14 @@
 ---
 board2021:
-  - name:  Alexandra Kasparian
-    year:  22
-    role:  General Manager
-    email: kasparam@lafayette.edu
-
   - name:  Hannah George
     year:  22
-    role:  Vice General Manager
+    role:  General Manager
     email: georgeh@lafayette.edu
+
+  - name:  Ian Duffy
+    year:  24
+    role:  Vice General Manager
+    email: duffyi@lafayette.edu 
     
   - name:  Travis King
     year:  24
@@ -40,10 +40,10 @@ board2021:
     role:  Events Director
     email: raymondc@lafayette.edu  
     
-  - name:  Ian Duffy
-    year:  24
+  - name:  Alex Madeira
+    year:  23
     role:  Music Director
-    email: duffyi@lafayette.edu  
+    email: madeiraa@lafayette.edu
     
   - name:  Julia Santaniello
     year:  22
