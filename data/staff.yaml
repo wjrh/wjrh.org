@@ -1,4 +1,61 @@
 ---
+board2022:
+  - name:  Alex Madeira
+    year:  23
+    role:  General Manager
+    email: madeiraa@lafayette.edu
+
+  - name:  Ian Duffy
+    year:  24
+    role:  Vice General Manager
+    email: duffyi@lafayette.edu 
+    
+  - name:  Travis King
+    year:  24
+    role:  Treasurer
+    email: kingtd@lafayette.edu    
+
+  - name:  Tess Stanley
+    year:  25
+    role:  Secretary
+    email: stanleyt@lafayette.edu
+    
+  - name:  Skye Loures
+    year:  24
+    role:  Program Director
+    email: louress@lafayette.edu 
+
+  - name:  Abby Zea
+    year:  24
+    role:  Public Relations Director
+    email: zeaa@lafayette.edu
+    
+  - name:  Tom Smith
+    year:  24
+    role:  Community Outreach Director
+    email: smitht@lafayette.edu
+
+  - name:  Bernadette Russo
+    year:  24
+    role:  Events Director
+    email: russob@lafayette.edu
+    
+  - name:  Christian Festa
+    year:  24
+    role:  Music Director
+    email: festac@lafayette.edu
+    
+  - name:  Devin Arnold
+    year:  24
+    role:  Chief Engineer
+    email: arnolddj@lafayette.edu  
+    
+  - name:  Jordan Lam
+    year:  23
+    role:  Alumni Relations Director
+    email: lamjr@lafayette.edu
+    
+---
 board2021:
   - name:  Hannah George
     year:  22
