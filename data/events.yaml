@@ -11,6 +11,16 @@
  # it is ok not to have pictures as long as "what", "when" and "where" is filled.
  # please follow YYYY-MM-DD order with dates
 ---
+- what: Mosie with j soloman and Star Moles
+  when: 2022-5-6 7:00pm
+  where: Marlo Room
+  imgur_album_id:
+  
+- what: Isa Reyes and Vasey Hall
+  when: 2018-10-12 8:00pm
+  where: Kirby House Lounge
+  imgur_album_id:
+  
 - what: Sixpress
   when: 2018-2-17 6:00pm
   where: 643 Parsons St
