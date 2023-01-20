@@ -1,4 +1,66 @@
 ---
+board2023:
+  - name:  Alex Madeira
+    year:  23
+    role:  General Manager
+    email: madeiraa@lafayette.edu
+   
+  - name:  Tess Stanley
+    year:  25
+    role:  Vice General Manager
+    email: stanleyt@lafayette.edu
+   
+  - name:  Travis King
+    year:  24
+    role:  Treasurer
+    email: kingtd@lafayette.edu    
+
+  - name:  Hannah Macarchuk
+    year:  26
+    role:  Secretary
+    email: macarchh@lafayette.edu
+    
+  - name:  Skye Loures
+    year:  24
+    role:  Program Director
+    email: louress@lafayette.edu 
+
+  - name:  Abby Zea
+    year:  24
+    role:  Public Relations Director
+    email: zeaa@lafayette.edu
+    
+  - name:  Jen Parsons
+    year:  26
+    role:  Community Outreach Director
+    email: parsonje@lafayette.edu
+
+  - name:  Bernadette Russo
+    year:  24
+    role:  Events Director
+    email: russob@lafayette.edu
+    
+  - name:  Eva Donato
+    year:  26
+    role:  Music Director
+    email: donatoe@lafayette.edu
+    
+  - name:  Christian Festa
+    year:  24
+    role:  FCC Compliance Director
+    email: festac@lafayette.edu
+
+  - name:  Chris Byrnes
+    year:  26
+    role:  FCC Compliance Team
+    email: byrnesc@lafayette.edu
+    
+  - name:  Devin Arnold
+    year:  24
+    role:  Chief Engineer
+    email: arnolddj@lafayette.edu
+    
+---
 board2022:
   - name:  Alex Madeira
     year:  23
