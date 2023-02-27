@@ -45,4 +45,4 @@ Input 730 High Street, Easton, PA, into your GPS device to navigate to Lafayette
 
 #### Board Meetings
 
-You can attend our open Board Meetings, held every week on Monday at 7:00PM in our Hogg Hall Studio. These meetings are held only on weeks when the college is in session. Email us with any questions regarding meeting dates/times.
+You can attend our open Board Meetings, held every week on Tuesday at 7:00PM in our Hogg Hall Studio. These meetings are held only on weeks when the college is in session. Email us with any questions regarding meeting dates/times.
