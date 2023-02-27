@@ -24,13 +24,16 @@ Organizing events, bringing bands, starting new tech projects all begin by you b
 ### Positions on the Board
 We have the following nine positions on the board ([job descriptions here](/board/positions)):
 
+- General Manager
+- Vice General Manager
 - Program Director
 - Events Director
 - Treasurer
-- General Manager
 - Secretary
 - Music Director
 - Public Relations Director
+- Community Outreach Director
+- FCC Compliance Director and Team
 - Chief Engineer
 
 Most of these positions can be filled by anybody regardless of major or past experience. In addition to these positions, the board also has an unlimited number of positions available under these titles although you will need to display a level of competence in technical work you will be involved in:
@@ -39,10 +42,8 @@ Most of these positions can be filled by anybody regardless of major or past exp
 - Engineering
 
 ### How do the elections work?
-We solicit applications from the wider community. Board member applicants do not need to be current disk jockeys, as long as they are interested in working in the board. Elections will be by secret ballot and Instant-runoff voting will be used. All DJs and current officers may vote once each. Freshman can not run for the General Manager position. You will be able to run for [one position](/board/positions) only.
+We solicit applications from the wider community. Board member applicants do not need to be current disk jockeys, as long as they are interested in working in the board. Elections will be by secret ballot and Instant-runoff voting will be used. All DJs and current officers may vote once each. Freshman can not run for the General Manager position. You will be able to run for [one position](/board/positions) only. Elections are completed through a Google Form distributed through the WJRH GroupMe and email list. 
 
-*For the December 2015 elections, you need to self nominate yourself on Wednesday, December 9, 2015 at 5-6PM in the WJRH Studio.*
-
-We gather all people interested in one room to find an optimal point for everyone involved. There will be a publicly displayed list of all applicants. We will encourage negotiating with other candidates on positions and asking advice from incumbent board members who will be present at nomiations. If you are unable to attend this meeting, you will have send a represenative equipped with the necessary information.
+We gather all people interested in one room to find an optimal point for everyone involved. There will be a publicly displayed list of all applicants. We will encourage negotiating with other candidates on positions and asking advice from incumbent board members who will be present at nomiations.
 
 
