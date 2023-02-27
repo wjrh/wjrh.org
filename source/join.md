@@ -11,4 +11,6 @@ You can join the station as a DJ anytime, however, in the beginning of every sea
 
 New schedules are publised in the beginning of every season on our website and shows start typically on the second weeks on Summer and Spring and on the third week of the Fall semester. Exact semester schedules can be found on the Lafayette College website.
 
+To stay updated on events, general body meetings, and DJ troubleshooting, please join the WJRH GroupMe, updated each academic year. Click here to join the current [2022-2023 WJRH GroupMe](https://groupme.com/join_group/89263253/h9Z9HS0h).
+
 
