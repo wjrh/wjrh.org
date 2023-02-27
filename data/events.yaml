@@ -11,10 +11,15 @@
  # it is ok not to have pictures as long as "what", "when" and "where" is filled.
  # please follow YYYY-MM-DD order with dates
 ---
+- what: WJRH x Arts Society Heartbreaker Bash Charity Dance
+  when: 2023-2-17 8:00pm
+  where: Williams Center for the Arts Lobby
+  imgur_album_id:
+  
 - what: Mosie with j soloman and Star Moles
   when: 2022-5-6 7:00pm
   where: Marlo Room
-  imgur_album_id:
+  imgur_album_id: uRvV50X
   
 - what: Isa Reyes and Vasey Hall
   when: 2018-10-12 8:00pm
